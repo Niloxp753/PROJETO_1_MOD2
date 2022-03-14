@@ -5,9 +5,9 @@ let texto = document.querySelector("#text-img");
 
 let bodyImage = document.getElementById("#backBody-img");
 
-let index = 0
+let index = 0;
 
-let max = 5
+let max = 5;
 
 
 let imagensPaisagem = [
@@ -28,11 +28,12 @@ let textImage = [
 
 
 function nextImgText(){
-    index++ 
+    index++;
     
     if (index >= max){
         index = 0;
-    }
+    };
+
     if (index == 1){
         img.src="assets/img/Ilhas Lofoten.jpg";
         texto.textContent = textImage[1];
@@ -43,28 +44,30 @@ function nextImgText(){
     } else if (index == 2){
         img.src="assets/img/Lago Dobbiaco.jpg";
         texto.textContent = textImage[2];
+
     } else if (index == 3){
         img.src="assets/img/Snow Mountain.jpg";
         texto.textContent = textImage[3];
+
     } else if (index == 4){
         img.src=img.src="assets/img/Tibete.jpg";
         texto.textContent = textImage[4];
+
     } else if(index == 0){
         img.src="assets/img/Fisher Towers.jpg";
         texto.textContent = textImage[0];
     }
-   
-
-}
+};
 
 function prevImgText(){
     if (index > 0){
     index--
-    }
+    };
 
     if (index >= max){
         index = 0;
-    }
+    };
+
     if (index == 1){
         img.src="assets/img/Ilhas Lofoten.jpg";
         texto.textContent = textImage[1];
@@ -72,18 +75,19 @@ function prevImgText(){
     } else if (index == 2){
         img.src="assets/img/Lago Dobbiaco.jpg";
         texto.textContent = textImage[2];
+
     } else if (index == 3){
         img.src="assets/img/Snow Mountain.jpg";
         texto.textContent = textImage[3];
+
     } else if (index == 4){
         img.src=img.src="assets/img/Tibete.jpg";
         texto.textContent = textImage[4];
+
     }  else if(index == 0){
         img.src="assets/img/Fisher Towers.jpg";
         texto.textContent = textImage[0];
     }
-
-    
-}
+};
 
 
