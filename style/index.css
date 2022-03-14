@@ -5,7 +5,7 @@
     font-size: 100%;
     box-sizing: border-box;
     font-family: "itim", coursive;
-};
+}
 
 body{
     max-height: 100vh;
@@ -13,7 +13,7 @@ body{
     display: flex;
     flex-direction: column;
     overflow: hidden;
-};
+}
 
 body#backBody-img{
     background-image: url(../assets/img/Fisher\ Towers.jpg);
@@ -21,7 +21,7 @@ body#backBody-img{
     background-size: cover;
     background-position: center center;
     backdrop-filter: blur(3px);
-};
+}
 
 
 h1#text-img{
@@ -30,7 +30,7 @@ h1#text-img{
     color: white;
     font-size: 2rem;
     text-shadow: 0 0 8px rgb(12, 12, 12);
-};
+}
 
 .images{
     max-width: 70vw;
@@ -40,7 +40,7 @@ h1#text-img{
     padding: 10px;
     top: 50%;
     left: 15%;   
-};
+}
 
 .images img{
     width: 100%;
@@ -53,7 +53,7 @@ h1#text-img{
     object-position: center;
     box-shadow:  2000px 5000px 100px 100px black inset, 10px 5px 4px rgba(0, 0, 0, 0.644);
     position: relative;
-};
+}
 
 .images button.but-next{
     width: 20%;
@@ -74,7 +74,7 @@ h1#text-img{
     text-shadow: 0 0 8px rgb(66, 64, 64);
 
     
-};
+}
 
 button.but-next:hover{
     animation-name: animation;
@@ -83,7 +83,7 @@ button.but-next:hover{
     animation-iteration-count: infinite;
     animation-direction: alternate;
      
-};
+}
 
 
 .images button.but-previous{
@@ -95,13 +95,15 @@ button.but-next:hover{
     gap: 10px;
     top: 85%;
     text-align: center;
+    text-decoration: none;
+    font-size: 110%;
     background-image: linear-gradient(-45deg, rgb(245, 248, 247) 1%, rgb(10, 10, 10) 99%);
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 2px 5px 10px #130d11c7 inset, 10px 5px 4px rgba(0, 0, 0, 0.644);
     text-shadow: 0 0 8px rgb(66, 64, 64);
 
-};
+}
 
 button.but-previous:hover{
     animation-name: animation;
@@ -110,7 +112,7 @@ button.but-previous:hover{
     animation-iteration-count: infinite;
     animation-direction: alternate;
      
-};
+}
 
 .images button.but-center{
     width: 20%;
@@ -122,12 +124,14 @@ button.but-previous:hover{
     gap: 10px;
     transition: translate(-50%, -50%);
     text-align: center;
+    text-decoration: none;
+    font-size: 110%;
     background-image: linear-gradient(180deg, rgb(245, 248, 247) 1%, rgb(66, 64, 64) 99%);
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 2px 5px 10px #130d11c7 inset, 10px 5px 4px rgba(0, 0, 0, 0.644);
     text-shadow: 0 0 8px rgb(66, 64, 64);
-};
+}
 
 button.but-center:hover{
     animation-name: animation;
@@ -136,7 +140,7 @@ button.but-center:hover{
     animation-iteration-count: infinite;
     animation-direction: alternate;
      
-};
+}
 
 @keyframes animation {
     0%{
@@ -146,4 +150,4 @@ button.but-center:hover{
     100%{
         transform: scale(1.05);
     }
-};
+}

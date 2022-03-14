@@ -16,7 +16,7 @@ let imagensPaisagem = [
     "assets/img/Lago Dobbiaco.jpg",
     "assets/img/Snow Mountain.jpg",
     "assets/img/Tibete.jpg",  
-];
+]
 
 let textImage = [
     "Utah, Fisher Towers, Lake, 2021",
@@ -24,7 +24,7 @@ let textImage = [
     "Itália, Lago Dobbiaco, Manhã, 2021",
     "Nepal, Snow Mountain, Lago, Reflexo, 2021",
     "China, Tibete, Snow Mountain, 2021",
-];
+]
 
 
 function nextImgText(){
@@ -57,7 +57,7 @@ function nextImgText(){
         img.src="assets/img/Fisher Towers.jpg";
         texto.textContent = textImage[0];
     }
-};
+}
 
 function prevImgText(){
     if (index > 0){
@@ -88,6 +88,8 @@ function prevImgText(){
         img.src="assets/img/Fisher Towers.jpg";
         texto.textContent = textImage[0];
     }
-};
+}
 
-
+function butCenter (){
+    
+}
