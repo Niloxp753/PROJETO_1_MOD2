@@ -1,96 +1,160 @@
 * {
     padding: 0;
     margin: 0;
+    outline: none;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: "itim", coursive;
 }
-
-body {
+body{
+    max-height: 100vh;
+    max-width: 100vw;
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(72deg,#696464 1%,#000000 99%);
-    
-}
-
-.content {
-    
-    height: 50%;
-    width: 50%;
-    border-radius: 20px;
+    flex-direction: column;
     overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 100%;
-    object-fit: cover;
-    box-shadow: 2px 5px 10px #130d11c7;
-    
 }
 
-.navigation {
+body#backBody-img{
+    background-image: url(../assets/img/Fisher\ Towers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    backdrop-filter: blur(3px);
+}
+
+
+h1#text-img{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 0 0 8px rgb(12, 12, 12);
+}
+
+.images{
+    max-width: 70vw;
+    display: flex;
+    flex: 1 1 250px;
     position: relative;
-    bottom: 20%;
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
+    padding: 10px;
+    top: 50%;
+    left: 15%;   
 }
 
-.barra {
-    width: 5vw;
-    height: 5vh;
-    border: 2px solid #fff;
-    margin: 6px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .4s;
-    box-shadow: 2px 2px 8px #130d11c7;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.barra:hover {
-    background-color: #fff;
-}
-
-input {
-    display: none;
-}
-
-.slides {
-    display: flex;
-    width: 500%;
-    height: 100%;
-    
-}
-
-.slide {
-    width: 20%;
-    transition: .6s;
-    
-}
-
-.slide img {
+.images img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
     object-fit: cover;
+    object-position: center;
+    box-shadow:  2000px 5000px 100px 100px black inset, 10px 5px 4px rgba(0, 0, 0, 0.644);
+    position: relative;
 }
 
-#slide1:checked ~ .s1 {
-    margin-left: 0;
+.images button.but-next{
+    width: 20%;
+    height: 6vh;
+    position: absolute;
+    top: 85%;
+    bottom: 5%;
+    right: 10%;
+    gap: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 110%;
+    text-align: center;
+    background-image: linear-gradient(45deg, rgb(245, 248, 247) 1%, rgb(10, 10, 10) 99%);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px #130d11c7 inset, 10px 5px 4px rgba(0, 0, 0, 0.644);
+    text-shadow: 0 0 8px rgb(66, 64, 64);
+
+    
+}
+button.but-next:hover{
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+     
 }
 
-#slide2:checked ~ .s1 {
-    margin-left: -20%;
+
+.images button.but-previous{
+    width: 20%;
+    height: 6vh;
+    position: absolute;
+    bottom: 5%;
+    left: 9%;
+    gap: 10px;
+    top: 85%;
+    text-align: center;
+    background-image: linear-gradient(-45deg, rgb(245, 248, 247) 1%, rgb(10, 10, 10) 99%);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px #130d11c7 inset, 10px 5px 4px rgba(0, 0, 0, 0.644);
+    text-shadow: 0 0 8px rgb(66, 64, 64);
+
 }
 
-#slide3:checked ~ .s1 {
-    margin-left: -40%;
+button.but-previous:hover{
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+     
 }
 
-#slide4:checked ~ .s1 {
-    margin-left: -60%;
+.images button.but-center{
+    width: 20%;
+    height: 6vh;
+    position: absolute;
+    top: 85%;
+    bottom: 5%;
+    left: 40%;
+    gap: 10px;
+    transition: translate(-50%, -50%);
+    text-align: center;
+    background-image: linear-gradient(180deg, rgb(245, 248, 247) 1%, rgb(66, 64, 64) 99%);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px #130d11c7 inset, 10px 5px 4px rgba(0, 0, 0, 0.644);
+    text-shadow: 0 0 8px rgb(66, 64, 64);
 }
 
-#slide5:checked ~ .s1 {
-    margin-left: -80%;
+button.but-center:hover{
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+     
 }
+
+@keyframes animation {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+/* iframe#maps-image{
+    border-radius: 20px; 
+    margin-top: 10px auto;
+    width: 100%;
+    height: 70vh;
+    border: 0;
+    align-content: center;
+    margin: 200px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 350px;
+} */
