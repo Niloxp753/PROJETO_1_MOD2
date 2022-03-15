@@ -3,7 +3,6 @@ let img = document.querySelector(".image-change");
 
 let texto = document.querySelector("#text-img");
 
-
 let link = document.querySelector(".but-center");
 
 let index = 0;
