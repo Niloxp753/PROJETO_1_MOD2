@@ -5,6 +5,8 @@ let texto = document.querySelector("#text-img");
 
 let bodyImage = document.getElementById("#backBody-img");
 
+let link = document.querySelector(".but-center");
+
 let index = 0;
 
 let max = 5;
@@ -37,10 +39,7 @@ function nextImgText(){
     if (index == 1){
         img.src="assets/img/Ilhas Lofoten.jpg";
         texto.textContent = textImage[1];
-        bodyImage.addEventListener("click",function(){
-            document.querySelector("body").src="assets/img/Ilhas Lofoten.jpg"
-        })
-        
+
     } else if (index == 2){
         img.src="assets/img/Lago Dobbiaco.jpg";
         texto.textContent = textImage[2];
@@ -90,6 +89,23 @@ function prevImgText(){
     }
 }
 
-function butCenter (){
+function butCenter(){ 
     
+    window.location.href='https://goo.gl/maps/A6MsAuyK7aAeh4J3A'
+        
+      if (index == 1){
+        window.location.href='https://goo.gl/maps/pakw8HDXW2E46kYEA'
+
+    } else if (index == 2){
+        window.location.href='https://goo.gl/maps/8oLLpm6u2i4KhRYSA'
+
+    } else if (index == 3){
+        window.location.href='https://goo.gl/maps/oGh8ENrhPQaf1WT99'
+
+    } else if (index == 4){
+        window.location.href='https://goo.gl/maps/B5o4inEBg4BRWUf59'
+
+    } else if(index == 0){
+        window.location.href='https://goo.gl/maps/A6MsAuyK7aAeh4J3A'
+    }
 }
