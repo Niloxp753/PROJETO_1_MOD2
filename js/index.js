@@ -34,27 +34,58 @@ function nextImgText(){
     
     if (index >= max){
         index = 0;
+        document.body.style.backgroundImage = "url('assets/img/Fisher Towers.jpg)";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
     };
 
     if (index == 1){
         img.src="assets/img/Ilhas Lofoten.jpg";
         texto.textContent = textImage[1];
+        document.body.style.backgroundImage = "url('assets/img/Ilhas Lofoten.jpg')";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
 
     } else if (index == 2){
         img.src="assets/img/Lago Dobbiaco.jpg";
         texto.textContent = textImage[2];
+        document.body.style.backgroundImage = "url('assets/img/Lago Dobbiaco.jpg')";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
+
 
     } else if (index == 3){
         img.src="assets/img/Snow Mountain.jpg";
         texto.textContent = textImage[3];
+        document.body.style.backgroundImage = "url('assets/img/Snow Mountain.jpg')";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
 
     } else if (index == 4){
         img.src=img.src="assets/img/Tibete.jpg";
         texto.textContent = textImage[4];
+        document.body.style.backgroundImage = "url('assets/img/Tibete.jpg')";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
 
     } else if(index == 0){
         img.src="assets/img/Fisher Towers.jpg";
         texto.textContent = textImage[0];
+        document.body.style.backgroundImage = "url('assets/img/Fisher Towers.jpg)";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
     }
 }
 
@@ -70,22 +101,47 @@ function prevImgText(){
     if (index == 1){
         img.src="assets/img/Ilhas Lofoten.jpg";
         texto.textContent = textImage[1];
+        document.body.style.backgroundImage = "url('assets/img/Ilhas Lofoten.jpg')";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
         
     } else if (index == 2){
         img.src="assets/img/Lago Dobbiaco.jpg";
         texto.textContent = textImage[2];
+        document.body.style.backgroundImage = "url('assets/img/Lago Dobbiaco.jpg')";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
 
     } else if (index == 3){
         img.src="assets/img/Snow Mountain.jpg";
         texto.textContent = textImage[3];
+        document.body.style.backgroundImage = "url('assets/img/Snow Mountain.jpg')";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
 
     } else if (index == 4){
         img.src=img.src="assets/img/Tibete.jpg";
         texto.textContent = textImage[4];
+        document.body.style.backgroundImage = "url('assets/img/Tibete.jpg')";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
 
     }  else if(index == 0){
         img.src="assets/img/Fisher Towers.jpg";
         texto.textContent = textImage[0];
+        document.body.style.backgroundImage = "url('assets/img/Fisher Towers.jpg)";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
     }
 }
 

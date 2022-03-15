@@ -18,7 +18,7 @@ body{
     overflow: hidden;
 }
 
-body#backBody-img{
+body.backBody-img{
     background-image: url(../assets/img/Fisher\ Towers.jpg);
     background-repeat: no-repeat;
     background-size: cover;
