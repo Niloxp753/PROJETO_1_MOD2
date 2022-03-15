@@ -3,7 +3,6 @@ let img = document.querySelector(".image-change");
 
 let texto = document.querySelector("#text-img");
 
-let bodyImage = document.getElementById("#backBody-img");
 
 let link = document.querySelector(".but-center");
 
@@ -34,11 +33,6 @@ function nextImgText(){
     
     if (index >= max){
         index = 0;
-        document.body.style.backgroundImage = "url('assets/img/Fisher Towers.jpg)";
-        document.body.style.backgroundRepeat = 'no-repeat';
-        document.body.style.backgroundSize = 'cover';
-        document.body.style.backgroundPosition = 'center';
-        document.body.style.backgroundFilter = 'blur(3px)';
     };
 
     if (index == 1){
@@ -81,7 +75,7 @@ function nextImgText(){
     } else if(index == 0){
         img.src="assets/img/Fisher Towers.jpg";
         texto.textContent = textImage[0];
-        document.body.style.backgroundImage = "url('assets/img/Fisher Towers.jpg)";
+        document.body.style.backgroundImage = "url('assets/img/Fisher Towers.jpg')";
         document.body.style.backgroundRepeat = 'no-repeat';
         document.body.style.backgroundSize = 'cover';
         document.body.style.backgroundPosition = 'center';
@@ -96,6 +90,11 @@ function prevImgText(){
 
     if (index >= max){
         index = 0;
+        document.body.style.backgroundImage = "url('assets/img/Fisher Towers.jpg)";
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundFilter = 'blur(3px)';
     };
 
     if (index == 1){
@@ -137,7 +136,7 @@ function prevImgText(){
     }  else if(index == 0){
         img.src="assets/img/Fisher Towers.jpg";
         texto.textContent = textImage[0];
-        document.body.style.backgroundImage = "url('assets/img/Fisher Towers.jpg)";
+        document.body.style.backgroundImage = "url('assets/img/Fisher Towers.jpg')";
         document.body.style.backgroundRepeat = 'no-repeat';
         document.body.style.backgroundSize = 'cover';
         document.body.style.backgroundPosition = 'center';
